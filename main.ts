@@ -58,6 +58,8 @@ function Active_talker_clear () {
 let Active_Talker: Sprite = null
 let Gender = ""
 let Version_Number = textsprite.create("Beta 0.1", 15, 13)
+let Version_Code = textsprite.create("25W25A")
+sprites.destroy(Version_Code)
 Version_Number.setPosition(32, 10)
 // This contains the first set of screens that show the title of the game and who made it, before it fades into the main menu
 let i = textsprite.create("Daniel Good Presents:")
@@ -316,20 +318,38 @@ if (story.checkLastAnswer("Do I have to?")) {
         story.printCharacterText("" + UserName + "! Whatcha need?", "Ruby")
         story.showPlayerChoices("I need to find Alex", "What are your thoughts on the spy?")
         if (story.checkLastAnswer("What are your thoughts on the spy?")) {
-        	
-        } else {
-        	
+            story.printCharacterText("Oh...", "Ruby")
+            story.printCharacterText("Y'know what? I can trust you.", "Ruby")
+            story.printCharacterText("But you have to promise NOT to tell him. Ok?", "Ruby")
+            story.showPlayerChoices("Actually, Never Mind.", "I promise.")
+            if (story.checkLastAnswer("I promise.")) {
+                story.printCharacterText("When Alex joined our team as our 5th member", "Ruby")
+                story.printCharacterText("Louis started to get angrier easier.", "Ruby")
+                story.printCharacterText("And it's in a way that almost makes it seem that the pair knew eachother previously ", "Ruby")
+                story.printCharacterText("Unfortunately, I have a feeling that Louis might not be as reliable as the rest of the Team thinks.", "Ruby")
+                story.printCharacterText("Anyway, moving on...", "Ruby")
+                story.printCharacterText("I heard You're looking for Alex?", "Ruby")
+                story.printCharacterText("Lucky, I know where he is. Because when he disappears, it gets hard to find him.", "Ruby")
+            } else {
+                story.printCharacterText("I appreciate your honesty", "Ruby")
+                story.printCharacterText("If you're looking for Alex...", "Ruby")
+            }
         }
+        story.printCharacterText("Alex is in his locker room. It's down the Hall that way.", "Ruby")
+        story.printCharacterText("The door has a bomb symbol on it. You can't miss it.", "Ruby")
     } else if (story.checkLastAnswer("Ask Louis")) {
         story.printCharacterText("Yeah, Louis might know where you can find Alex.", "Daniel")
         Active_talker_set_Louis()
         story.printCharacterText("Hey. How's it going?", "Louis")
         story.showPlayerChoices("Do you know where Alex is?", "Who do you think the mole is?")
         if (story.checkLastAnswer("Who do you think the mole is?")) {
-        	
-        } else {
-        	
+            story.printCharacterText("Alex.", "Louis")
+            story.printCharacterText("I don't even need to think about it.", "Louis")
+            story.printCharacterText("Ever since he joined the team, He's been trying to get me killed.", "Louis")
+            story.printCharacterText("I honestly don't know how no one has picked up on the little F#cker.", "Louis")
+            story.printCharacterText("But that's enough of that. I heard You're looking for the little brat.", "Louis")
         }
+        story.printCharacterText("He's over at the barracks. There'll be a door with a bomb on it. He'll be in there.", "Louis")
     }
 }
 Active_talker_clear()
