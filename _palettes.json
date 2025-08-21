@@ -1,0 +1,28 @@
+{
+    "nextPaletteID": 1,
+    "palettes": {
+        "custom0": {
+            "id": "custom0",
+            "name": "Bushranger",
+            "colors": [
+                "#000000",
+                "#a8e4d4",
+                "#d13b27",
+                "#e07f8a",
+                "#cc8218",
+                "#b3e868",
+                "#5d853a",
+                "#68c127",
+                "#286fb8",
+                "#9b8bff",
+                "#878787",
+                "#DEDEDE",
+                "#404040",
+                "#969696",
+                "#F3BD2B",
+                "#000000"
+            ],
+            "custom": true
+        }
+    }
+}

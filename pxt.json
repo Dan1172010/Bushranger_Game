@@ -1,0 +1,49 @@
+{
+    "name": "Project Bushranger",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0",
+        "arcade-story": "github:microsoft/arcade-storytelling#v1.0.3"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "main.py",
+        "images.g.jres",
+        "images.g.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "2.0.56",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj",
+    "palette": [
+        "#000000",
+        "#a8e4d4",
+        "#d13b27",
+        "#e07f8a",
+        "#cc8218",
+        "#b3e868",
+        "#5d853a",
+        "#68c127",
+        "#286fb8",
+        "#9b8bff",
+        "#878787",
+        "#DEDEDE",
+        "#404040",
+        "#969696",
+        "#F3BD2B",
+        "#000000"
+    ]
+}
