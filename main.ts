@@ -97,7 +97,7 @@ function Active_talker_set_Battle_damaged_Daniel () {
 let Active_Talker: Sprite = null
 let Gender = ""
 let Version_Number = textsprite.create("Beta 0.2", 15, 13)
-let Version_Code = textsprite.create("25W26A")
+let Version_Code = textsprite.create("25W26C")
 sprites.destroy(Version_Code)
 Version_Number.setPosition(32, 10)
 // This contains the first set of screens that show the title of the game and who made it, before it fades into the main menu
@@ -370,12 +370,11 @@ if (story.checkLastAnswer("Do I have to?")) {
         story.printCharacterText("Hey. How's it going?", "Louis")
         story.showPlayerChoices("Do you know where Alex is?", "Who do you think the mole is?")
         if (story.checkLastAnswer("Who do you think the mole is?")) {
-        	
-        } else {
-        	
+            story.printCharacterText("Alex.", "Louis")
+            story.printCharacterText("I have no doubt.", "Louis")
+            story.printCharacterText("And let's not go any further than that question.", "Louis")
+            story.printCharacterText("If you're looking for him,", "Louis")
         }
-        story.printCharacterText("He's over at the barracks. There'll be a door with a bomb on it. He'll be in there.", "Louis")
-    } else {
         story.printCharacterText("He's over at the barracks. There'll be a door with a bomb on it. He'll be in there.", "Louis")
     }
     Active_talker_set_Alex()
@@ -521,6 +520,8 @@ if (story.checkLastAnswer("Do I have to?")) {
         story.printCharacterText("Don't worry about the formalities. Just call me Daniel.", "Daniel")
         Active_talker_set_Ruby()
         story.printCharacterText("Hate to break up the introduction, But where'd that 'thing' go?", "Daniel")
+        Active_talker_set_Battle_damaged_Daniel()
+        story.printCharacterText("Goddamn it.", "Daniel")
     } else if (story.checkLastAnswer("Will")) {
         Active_talker_set_Will()
         story.printCharacterText("What?", "Will")
