@@ -1,106 +1,155 @@
-// Most of the following chuncks of code are my way of switching the costume of the Active Talker sprite. There is probably a more effective way of doing this. But this is good enough for me.
-// This is a function script that changes the sprite of the active talker to Daniel's Beat up texture.
-function Active_talker_set_Beat_Up_Daniel () {
+//  Most of the following chuncks of code are my way of switching the costume of the Active Talker sprite. There is probably a more effective way of doing this. But this is good enough for me.
+//  This is a function script that changes the sprite of the active talker to Daniel's Beat up texture.
+function Active_talker_set_Beat_Up_Daniel() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Daniel damaged Armoured 1`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Daniel damaged Armoured 1
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-// This is a function script that changes the sprite of the active talker to the player's texture.
-function Active_talker_set_Rookie () {
+
+//  This is a function script that changes the sprite of the active talker to the player's texture.
+function Active_talker_set_Rookie() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Rookie Armoured 1`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Rookie Armoured 1
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-// This is a function script that changes the sprite of the active talker to Evil Daniel's texture.
-function Active_talker_set_Daniel_Grain () {
+
+//  This is a function script that changes the sprite of the active talker to Evil Daniel's texture.
+function Active_talker_set_Daniel_Grain() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Evil Daniel Armoured 1`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Evil Daniel Armoured 1
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-// This is a function script that changes the sprite of the active talker to Will's texture.
-function Active_talker_set_Will () {
+
+//  This is a function script that changes the sprite of the active talker to Will's texture.
+function Active_talker_set_Will() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Will Armoured 1`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Will Armoured 1
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-// This is a function script that changes the sprite of the active talker to Louis' texture.
-function Active_talker_set_Louis_Dead () {
+
+//  This is a function script that changes the sprite of the active talker to Louis' texture.
+function Active_talker_set_Louis_Dead() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Louis Killed 1`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Louis Killed 1
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-// This is a function script that changes the sprite of the active talker to Dom's texture.
-function Active_talker_set_Alex () {
+
+//  This is a function script that changes the sprite of the active talker to Dom's texture.
+function Active_talker_set_Alex() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Alex Armoured 1`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Alex Armoured 1
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-// This is a function script that changes the sprite of the active talker to Ruby's texture.
-function Active_talker_set_Ruby () {
+
+//  This is a function script that changes the sprite of the active talker to Ruby's texture.
+function Active_talker_set_Ruby() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Ruby Armoured 2`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Ruby Armoured 2
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+
+controller.right.onEvent(ControllerButtonEvent.Pressed, function on_right_pressed() {
     story.clearAllText()
 })
-// Most of the following chuncks of code are my way of switching the costume of the Active Talker sprite. There is probably a more effective way of doing this. But this is good enough for me.
-// This is a function script that changes the sprite of the active talker to Daniel's kidnapped texture.
-function Active_talker_set_Kidnapped_Daniel () {
+//  Most of the following chuncks of code are my way of switching the costume of the Active Talker sprite. There is probably a more effective way of doing this. But this is good enough for me.
+//  This is a function script that changes the sprite of the active talker to Daniel's kidnapped texture.
+function Active_talker_set_Kidnapped_Daniel() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Daniel damaged Armoured 0`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Daniel damaged Armoured 0
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-// This is a function script that changes the sprite of the active talker to Louis' texture.
-function Active_talker_set_Louis () {
+
+//  This is a function script that changes the sprite of the active talker to Louis' texture.
+function Active_talker_set_Louis() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Louis Armoured 1`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Louis Armoured 1
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-// Most of the following chuncks of code are my way of switching the costume of the Active Talker sprite. There is probably a more effective way of doing this. But this is good enough for me.
-// This is a function script that changes the sprite of the active talker to Daniel's texture.
-function Active_talker_set_Disguised_Daniel () {
+
+//  Most of the following chuncks of code are my way of switching the costume of the Active Talker sprite. There is probably a more effective way of doing this. But this is good enough for me.
+//  This is a function script that changes the sprite of the active talker to Daniel's texture.
+function Active_talker_set_Disguised_Daniel() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Daniel Grain Armoured 1`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Daniel Grain Armoured 1
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-// This clears the active talker form the screen for when a completely blank screen is needed. such as during transitions.
-function Active_talker_clear () {
+
+//  This clears the active talker form the screen for when a completely blank screen is needed. such as during transitions.
+function Active_talker_clear() {
     sprites.destroy(Active_Talker)
 }
-// Most of the following chuncks of code are my way of switching the costume of the Active Talker sprite. There is probably a more effective way of doing this. But this is good enough for me.
-// This is a function script that changes the sprite of the active talker to Daniel's Beat up texture.
-function Active_talker_set_Dead_daneil () {
+
+//  Most of the following chuncks of code are my way of switching the costume of the Active Talker sprite. There is probably a more effective way of doing this. But this is good enough for me.
+//  This is a function script that changes the sprite of the active talker to Daniel's Beat up texture.
+function Active_talker_set_Dead_daneil() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Daniel dead 1`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Daniel dead 1
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-// Most of the following chuncks of code are my way of switching the costume of the Active Talker sprite. There is probably a more effective way of doing this. But this is good enough for me.
-// This is a function script that changes the sprite of the active talker to Daniel's kidnapped texture.
-function Active_talker_set_Battle_damaged_Daniel () {
+
+//  Most of the following chuncks of code are my way of switching the costume of the Active Talker sprite. There is probably a more effective way of doing this. But this is good enough for me.
+//  This is a function script that changes the sprite of the active talker to Daniel's kidnapped texture.
+function Active_talker_set_Battle_damaged_Daniel() {
+    
     sprites.destroy(Active_Talker)
-    Active_Talker = sprites.create(assets.image`Daniel damaged Armoured 2`, SpriteKind.Player)
+    Active_Talker = sprites.create(assets.image`
+            Daniel damaged Armoured 2
+            `, SpriteKind.Player)
     Active_Talker.setPosition(110, 58)
     Active_Talker.setScale(3, ScaleAnchor.Middle)
 }
-let Active_Talker: Sprite = null
+
+let Active_Talker : Sprite = null
 let Gender = ""
 let Version_Number = textsprite.create("Beta 0.2", 15, 13)
 let Version_Code = textsprite.create("25W26C")
 sprites.destroy(Version_Code)
 Version_Number.setPosition(32, 10)
-// This contains the first set of screens that show the title of the game and who made it, before it fades into the main menu
+//  This contains the first set of screens that show the title of the game and who made it, before it fades into the main menu
 let i = textsprite.create("Daniel Good Presents:")
 i.setPosition(90, 59)
 pause(2000)
@@ -109,11 +158,19 @@ pause(1000)
 sprites.destroy(i, effects.halo, 500)
 pause(1000)
 music.setVolume(50)
-music.play(music.createSong(assets.song`Menu 1`), music.PlaybackMode.LoopingInBackground)
-scene.setBackgroundImage(assets.image`Earth`)
-game.setDialogCursor(assets.image`Diologue select Icon`)
+music.play(music.createSong(assets.song`
+        Menu 1
+        `), music.PlaybackMode.LoopingInBackground)
+scene.setBackgroundImage(assets.image`
+    Earth
+    `)
+game.setDialogCursor(assets.image`
+    Diologue select Icon
+    `)
 game.splash("Press Space to Start", "Right arrow to skip text")
-scene.setBackgroundImage(assets.image`Background`)
+scene.setBackgroundImage(assets.image`
+    Background
+    `)
 music.stopAllSounds()
 music.setVolume(100)
 Active_talker_set_Disguised_Daniel()
@@ -122,12 +179,13 @@ story.printCharacterText("Hi. Welcome to Blue Team! My name's Daniel and I'm the
 story.printCharacterText("If You Follow Me, I can introduce you to the team.", "Daniel")
 story.printCharacterText("So, uhhh. I may or may not have forgotten your name. Could you remind me real quick?", "Daniel")
 let UserName = game.askForString("What's Your name?")
-// This checks for any slurs that may be put into the name. I haven't written all the slurs I can think of but here were the main ones that came up when I asked people to put a name in during testing.
+//  This checks for any slurs that may be put into the name. I haven't written all the slurs I can think of but here were the main ones that came up when I asked people to put a name in during testing.
 if (UserName == "Nigger" || (UserName == "Fuck" || (UserName == "Shit" || (UserName == "Osama" || false)))) {
-    story.printCharacterText("Hmmm. I don't think " + ("" + UserName) + " Is appropriate for this environment. Restart", "Daniel")
+    story.printCharacterText("Hmmm. I don't think " + ("" + ("" + UserName)) + " Is appropriate for this environment. Restart", "Daniel")
     pause(1000)
     game.reset()
 }
+
 story.printCharacterText("Hey! " + UserName + "! I knew it was something like that... definitely...", "Daniel")
 story.printCharacterText("Alright, Let's introduce you to everyone.", "Daniel")
 story.showPlayerChoices("Ok.", "Do I have to?")
@@ -157,6 +215,7 @@ if (story.checkLastAnswer("Do I have to?")) {
         game.gameOver(false)
         game.setGameOverMessage(false, "Awkward Ending!")
     }
+    
 } else {
     story.printCharacterText("Great! First up is Blue 2. Will B-064.", "Daniel")
     story.printCharacterText("Will is the marksman of our team. He can hit just about anything with his rifle. ", "Daniel")
@@ -176,6 +235,7 @@ if (story.checkLastAnswer("Do I have to?")) {
     } else {
         Gender = game.askForString("What do you Identify As?", 24)
     }
+    
     story.printCharacterText("Right... so " + Gender + "'s Name is " + UserName, "Daniel")
     story.printCharacterText("" + UserName + " Was assigned to our team as a Rookie.", "Daniel")
     story.printCharacterText("Alright. So that was Will. Now lets move on.", "Daniel")
@@ -196,6 +256,7 @@ if (story.checkLastAnswer("Do I have to?")) {
     } else {
         story.printCharacterText("" + UserName + "! Nice to meet you.", "Ruby")
     }
+    
     story.printCharacterText("Alright. Well that's that. I should probably get back to training. Catch you later?", "Ruby")
     Active_talker_set_Disguised_Daniel()
     story.printCharacterText("Nearly done! We've got two more people to go!", "Daniel")
@@ -221,6 +282,7 @@ if (story.checkLastAnswer("Do I have to?")) {
     if (story.checkLastAnswer("What happened back there?")) {
         story.printCharacterText("A fuel tank combusted while it was active.", "Louis")
     }
+    
     scene.cameraShake(5, 500)
     story.printCharacterText("BANG!", "")
     story.printCharacterText("Shit.", "Louis")
@@ -241,6 +303,7 @@ if (story.checkLastAnswer("Do I have to?")) {
         story.printCharacterText("Ya'know, higher ups want a failsafe if this facility falls into the wrong hands.", "Alex")
         story.printCharacterText("Nothing too important", "Alex")
     }
+    
     story.printCharacterText("Alright, thanks for the help. I gotta go now.", "Alex")
     story.printCharacterText("BANG!", "")
     scene.cameraShake(4, 500)
@@ -311,6 +374,7 @@ if (story.checkLastAnswer("Do I have to?")) {
         Active_talker_set_Disguised_Daniel()
         game.splash("After the Meeting", "Press Space to continue")
     }
+    
     Active_talker_set_Disguised_Daniel()
     story.printCharacterText("Alright! let's Scooby Doo this shit!", "Daniel")
     story.printCharacterText("Ok, " + UserName + ", I think it might be Alex.")
@@ -319,7 +383,7 @@ if (story.checkLastAnswer("Do I have to?")) {
     story.printCharacterText("Your job is to go around and ask the others questions and try to get evidence agains Alex.", "Daniel")
     story.printCharacterText("Go ask around and try to find Alex. I've got some things I need to do.", "Daniel")
     story.showPlayerChoices("Ask Will", "Ask Ruby", "Ask Louis")
-    // This is a fork in the story that hopefully sways the players choice on the imposter at the end.
+    //  This is a fork in the story that hopefully sways the players choice on the imposter at the end.
     if (story.checkLastAnswer("Ask Will")) {
         story.printCharacterText("Ok. Go see if will has noticed anything while you're there", "Daniel")
         Active_talker_set_Will()
@@ -341,12 +405,14 @@ if (story.checkLastAnswer("Do I have to?")) {
                 story.printCharacterText("I kid you not...", "Will")
                 story.printCharacterText("A windows update.", "Will")
             }
+            
             story.printCharacterText("Yeah. Basically, he seems luckier.", "Will")
             story.printCharacterText("Something else seems off as well, but I can't quite put my finger on it...", "Will")
             story.printCharacterText("Is there anything else you need?", "Will")
             Active_talker_set_Rookie()
             story.printCharacterText("Yeah, have you seen Alex at all?", UserName)
         }
+        
         Active_talker_set_Will()
         story.printCharacterText("Yeah, he's just down the hall, to the left", "Will")
         story.printCharacterText("There will be a couple of rooms, he'll be in the one with a symbol of a bomb.", "Will")
@@ -363,6 +429,7 @@ if (story.checkLastAnswer("Do I have to?")) {
             story.printCharacterText("And I'd rather leave it at that.", "Ruby")
             story.printCharacterText("Also, If you're looking for Alex,", "Ruby")
         }
+        
         story.printCharacterText("He's down the hall in the room that has a bomb on the door.", "Ruby")
     } else if (story.checkLastAnswer("Ask Louis")) {
         story.printCharacterText("Yeah, Louis might know where you can find Alex.", "Daniel")
@@ -375,8 +442,10 @@ if (story.checkLastAnswer("Do I have to?")) {
             story.printCharacterText("And let's not go any further than that question.", "Louis")
             story.printCharacterText("If you're looking for him,", "Louis")
         }
+        
         story.printCharacterText("He's over at the barracks. There'll be a door with a bomb on it. He'll be in there.", "Louis")
     }
+    
     Active_talker_set_Alex()
     story.printCharacterText("Hey.", "Alex")
     story.showPlayerChoices("Hey", "Who do you think the boogey is?")
@@ -386,6 +455,7 @@ if (story.checkLastAnswer("Do I have to?")) {
         Active_talker_set_Rookie()
         story.printCharacterText("a lot of people think it's you", UserName)
     }
+    
     Active_talker_set_Alex()
     story.printCharacterText("Hmm.", "Alex")
     story.printCharacterText("Actually, follow me.", "Alex")
@@ -393,6 +463,7 @@ if (story.checkLastAnswer("Do I have to?")) {
     if (story.checkLastAnswer("Where are we going?")) {
         story.printCharacterText("To find answers.", "Alex")
     }
+    
     game.splash("The Database", "Space to continue")
     story.printCharacterText("Here.", "Alex")
     story.printCharacterText("This is where the Dossier is held.", "Alex")
@@ -451,6 +522,7 @@ if (story.checkLastAnswer("Do I have to?")) {
         Active_talker_set_Alex()
         story.printCharacterText("Hey. Daniel's calling us up to the meeting room. We need to go now.", "Alex")
     }
+    
     game.splash("The Meeting", "Space to continue")
     Active_talker_set_Disguised_Daniel()
     story.printCharacterText("Ok.", "Daniel")
@@ -667,7 +739,9 @@ if (story.checkLastAnswer("Do I have to?")) {
         Active_talker_clear()
         story.printCharacterText("Yeah. That would be me...", "???")
     }
+    
 }
+
 Active_talker_clear()
 i = textsprite.create("Thanks for Playing!")
 i.setPosition(90, 59)

@@ -134,7 +134,7 @@ def Active_talker_set_Battle_damaged_Daniel():
 Active_Talker: Sprite = None
 Gender = ""
 Version_Number = textsprite.create("Beta 0.2", 15, 13)
-Version_Code = textsprite.create("25W26A")
+Version_Code = textsprite.create("25W26C")
 sprites.destroy(Version_Code)
 Version_Number.set_position(32, 10)
 # This contains the first set of screens that show the title of the game and who made it, before it fades into the main menu
@@ -455,12 +455,10 @@ else:
         story.show_player_choices("Do you know where Alex is?",
             "Who do you think the mole is?")
         if story.check_last_answer("Who do you think the mole is?"):
-            pass
-        else:
-            pass
-        story.print_character_text("He's over at the barracks. There'll be a door with a bomb on it. He'll be in there.",
-            "Louis")
-    else:
+            story.print_character_text("Alex.", "Louis")
+            story.print_character_text("I have no doubt.", "Louis")
+            story.print_character_text("And let's not go any further than that question.", "Louis")
+            story.print_character_text("If you're looking for him,", "Louis")
         story.print_character_text("He's over at the barracks. There'll be a door with a bomb on it. He'll be in there.",
             "Louis")
     Active_talker_set_Alex()
@@ -633,6 +631,8 @@ else:
         Active_talker_set_Ruby()
         story.print_character_text("Hate to break up the introduction, But where'd that 'thing' go?",
             "Daniel")
+        Active_talker_set_Battle_damaged_Daniel()
+        story.print_character_text("Goddamn it.", "Daniel")
     elif story.check_last_answer("Will"):
         Active_talker_set_Will()
         story.print_character_text("What?", "Will")
