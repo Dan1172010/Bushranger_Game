@@ -79,13 +79,17 @@ def Active_talker_clear():
     sprites.destroy(Active_Talker)
 Active_Talker: Sprite = None
 Gender = ""
+Version_Number = textsprite.create("Beta 0.1", 15, 13)
+Version_Code = textsprite.create("25W25A")
+sprites.destroy(Version_Code)
+Version_Number.set_position(32, 10)
 # This contains the first set of screens that show the title of the game and who made it, before it fades into the main menu
-textSprite = textsprite.create("Daniel Good Presents:")
-textSprite.set_position(90, 59)
+i = textsprite.create("Daniel Good Presents:")
+i.set_position(90, 59)
 pause(2000)
-textSprite.set_text("Bushrangers")
+i.set_text("Bushrangers")
 pause(1000)
-sprites.destroy(textSprite, effects.halo, 500)
+sprites.destroy(i, effects.halo, 500)
 pause(1000)
 music.set_volume(50)
 music.play(music.create_song(assets.song("""
@@ -211,7 +215,7 @@ else:
     Active_talker_set_Louis()
     story.print_character_text("What?", "Louis")
     Active_talker_set_Daniel()
-    story.print_character_text("Our new Rookie's here, try and keep it PG please?",
+    story.print_character_text("Our new Rookie's here, try and keep it PG and not use such a... colourful set of words please?",
         "Daniel")
     Active_talker_set_Louis()
     story.print_character_text("Fine", "Louis")
@@ -382,9 +386,28 @@ else:
         story.print_character_text("" + UserName + "! Whatcha need?", "Ruby")
         story.show_player_choices("I need to find Alex", "What are your thoughts on the spy?")
         if story.check_last_answer("What are your thoughts on the spy?"):
-            pass
-        else:
-            pass
+            story.print_character_text("Oh...", "Ruby")
+            story.print_character_text("Y'know what? I can trust you.", "Ruby")
+            story.print_character_text("But you have to promise NOT to tell him. Ok?", "Ruby")
+            story.show_player_choices("Actually, Never Mind.", "I promise.")
+            if story.check_last_answer("I promise."):
+                story.print_character_text("When Alex joined our team as our 5th member", "Ruby")
+                story.print_character_text("Louis started to get angrier easier.", "Ruby")
+                story.print_character_text("And it's in a way that almost makes it seem that the pair knew eachother previously ",
+                    "Ruby")
+                story.print_character_text("Unfortunately, I have a feeling that Louis might not be as reliable as the rest of the Team thinks.",
+                    "Ruby")
+                story.print_character_text("Anyway, moving on...", "Ruby")
+                story.print_character_text("I heard You're looking for Alex?", "Ruby")
+                story.print_character_text("Lucky, I know where he is. Because when he disappears, it gets hard to find him.",
+                    "Ruby")
+            else:
+                story.print_character_text("I appreciate your honesty", "Ruby")
+                story.print_character_text("If you're looking for Alex...", "Ruby")
+        story.print_character_text("Alex is in his locker room. It's down the Hall that way.",
+            "Ruby")
+        story.print_character_text("The door has a bomb symbol on it. You can't miss it.",
+            "Ruby")
     elif story.check_last_answer("Ask Louis"):
         story.print_character_text("Yeah, Louis might know where you can find Alex.", "Daniel")
         Active_talker_set_Louis()
@@ -395,3 +418,6 @@ else:
             pass
         else:
             pass
+Active_talker_clear()
+i = textsprite.create("Thanks for Playing!")
+i.set_position(90, 59)
