@@ -1,3 +1,5 @@
+Bushranger is an experimental novel game made in makecode. It is still a work in progress and updates are irregular. Each week there is a minor update, it will be tagged with a snapshot code. (e.g 25W22A) the first number signifies the year of the update (2025) with the W standing for the week (22nd week of the Year) and A letter for the version.
+ 
  Hi how's it going?
  This is a little game that I've had planned since 2023. But I just didn't know what direction I wanted to take it. This is the first 'Full-Development' game in the franchise , and any support will be greatly appreciated.
 (Also the wiki page for this franchise is here: https://riftwalkers.fandom.com/wiki/Riftwalkers_Wiki)
