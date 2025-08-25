@@ -1,7 +1,8 @@
- 
+ Hi how's it going?
+ This is a little game that I've had planned since 2023. But I just didn't know what direction I wanted to take it. This is the first 'Full-Development' game in the franchise , and any support will be greatly appreciated.
+(Also the wiki page for this franchise is here: https://riftwalkers.fandom.com/wiki/Riftwalkers_Wiki)
 
-
-> Open this page at [https://dan1172010.github.io/bushranger_game/](https://dan1172010.github.io/bushranger_game/)
+> Hey there! You seem to have stumbled upon my little game. Wanna play? click here to try it out! [https://dan1172010.github.io/bushranger_game/](https://dan1172010.github.io/bushranger_game/)
 
 ## Use as Extension
 
